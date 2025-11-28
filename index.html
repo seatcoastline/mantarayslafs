@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sera Ocean Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- WAVES BACKGROUND -->
+    <div class="ocean">
+        <div class="wave"></div>
+        <div class="wave"></div>
+    </div>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="logo">SERA 🐋</div>
+
+        <ul class="nav-links">
+            <li onclick="showPage('home')">Home</li>
+            <li onclick="showPage('about')">About</li>
+            <li onclick="showPage('portfolio')">Portfolio</li>
+            <li onclick="showPage('blog')">Blog</li>
+            <li onclick="showPage('contact')">Contact</li>
+        </ul>
+
+        <!-- DARK MODE TOGGLE -->
+        <button id="themeToggle">🌙</button>
+    </nav>
+
+    <!-- HOME -->
+    <section id="home" class="page active">
+        <div class="hero">
+            <h1 class="title">
+                Protect the Ocean,<br>
+                Love the Manta Rays 🐋✨
+            </h1>
+            <p class="subtitle">
+                Hi, I'm Sera — a learner who loves the ocean & cute manta rays.
+            </p>
+        </div>
+
+        <div class="manta-container">
+            <img src="https://i.ibb.co/0cRk6z7/manta.png" class="manta">
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="page">
+        <h2 class="section-title">About Me 🐚</h2>
+        <div class="card">
+            <p>
+                Halo! Aku Sera, siswi kelas 11 yang suka kreativitas, dunia laut,
+                dan terutama Manta Ray yang lembut.
+            </p>
+        </div>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section id="portfolio" class="page">
+        <h2 class="section-title">My Portfolio 🪼</h2>
+        <div class="card">
+            <ul>
+                <li>🌱 P5 — Galon Reboisasi</li>
+                <li>🎭 Drama "Kharuna"</li>
+                <li>🐋 Cerpen Menggapai Bintang</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- BLOG PAGE -->
+    <section id="blog" class="page">
+        <h2 class="section-title">Blog Belajar ✨</h2>
+        <div id="blogContainer" class="card"></div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="page">
+        <h2 class="section-title">Contact Me 🐚</h2>
+        <div class="card">
+            <p>Email: noviseraaa@gmail.com</p>
+            <p>Instagram: @14ovtian.rd</p>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
