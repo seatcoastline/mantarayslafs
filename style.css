@@ -1,0 +1,161 @@
+/* GENERAL */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #cceffd;
+    transition: background 0.3s, color 0.3s;
+}
+
+/* DARK MODE */
+body.dark {
+    background: #052c47;
+    color: #d7f6ff;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 25px;
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(10px);
+}
+
+body.dark .navbar {
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 22px;
+    color: #2f6ea3;
+}
+
+body.dark .logo {
+    color: #aeeaff;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-links li {
+    cursor: pointer;
+    font-weight: 600;
+    color: #2f6ea3;
+}
+
+.nav-links li:hover {
+    color: #ff9ecb;
+}
+
+body.dark .nav-links li {
+    color: #d0edff;
+}
+
+#themeToggle {
+    background: none;
+    border: none;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+/* WAVES BACKGROUND */
+.ocean {
+    height: 200px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.wave {
+    background: url("https://i.ibb.co/mc3PjT6/wave.png") repeat-x;
+    position: absolute;
+    width: 200%;
+    height: 100px;
+    bottom: 0;
+    animation: wave 10s infinite linear;
+}
+
+.wave:nth-child(2) {
+    opacity: 0.5;
+    animation-duration: 15s;
+}
+
+@keyframes wave {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+/* PAGE */
+.page {
+    display: none;
+    padding: 40px;
+}
+
+.page.active {
+    display: block;
+}
+
+/* HERO */
+.title {
+    color: #2f6ea3;
+    font-size: 40px;
+    text-align: center;
+}
+
+.subtitle {
+    text-align: center;
+    color: #4b7d9d;
+}
+
+/* DARK HERO */
+body.dark .title {
+    color: #bbebff;
+}
+
+body.dark .subtitle {
+    color: #b0dbff;
+}
+
+/* MANTA ANIMATION */
+.manta {
+    width: 250px;
+    animation: swim 5s infinite ease-in-out;
+}
+
+@keyframes swim {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+}
+
+/* SECTION TITLE */
+.section-title {
+    text-align: center;
+    color: #2f6ea3;
+    font-size: 30px;
+}
+
+body.dark .section-title {
+    color: #c7f3ff;
+}
+
+/* CARD */
+.card {
+    background: rgba(255, 255, 255, 0.45);
+    backdrop-filter: blur(15px);
+    padding: 25px;
+    border-radius: 20px;
+    margin: 20px auto;
+    max-width: 700px;
+}
+
+body.dark .card {
+    background: rgba(0, 0, 0, 0.35);
+    color: #d7f6ff;
+}
